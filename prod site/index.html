@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Pomodoro</th>
+            <th>Grade</th>
+            <th>Unit</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="subject" id="subject">
+                    <option value="math">Math</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                    <option value="physics">Physics</option>
+                </select>
+            </td>
+            <td><input type="number" id="pomodoro"></td>
+            <td><select name="grade" id="grade">
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select></td>
+            <td><input type="number" id="unit" ></td>
+            <td> <input type="date" id="date"></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+    <br><br><br>
+
+    <h1>Progress So Far</h1>
+<table>
+    <tr>
+        <th>Subject</th>
+        <th>Pomodoro</th>
+        <th>Grade</th>
+        <th>Unit</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+        <td>
+            <p>Math</p>
+        </td>
+        <td>4</td>
+        <td>11</td>
+        <td>6</td>
+        <td>11/11/2011</td>
+    </tr>
+    
+</table>
+
+<script src="./script.js"></script>
+</body>
+</html>
