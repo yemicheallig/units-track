@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+</head>
+
+<body>
+    <!-- Progress Table -->
+    <h1>Progress So Far</h1>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Pomodoro</th>
+            <th>Grade</th>
+            <th>Unit</th>
+            <th>Date</th>
+            <th>Action</th> <!-- New column for the Delete button -->
+        </tr>
+        <!-- Rows will be dynamically added here by JavaScript -->
+    </table>
+
+    <br><br>
+
+    <!-- Form for Adding New Progress -->
+    <h1>Add New Progress</h1>
+    <form action="post">
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Pomodoro</th>
+                <th>Grade</th>
+                <th>Unit</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="subject" id="subject">
+                        <option value="math">Math</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                        <option value="physics">Physics</option>
+                    </select>
+                </td>
+                <td><input type="number" id="pomodoro"></td>
+                <td>
+                    <select name="grade" id="grade">
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </td>
+                <td><input type="number" id="unit"></td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
